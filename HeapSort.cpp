@@ -36,15 +36,15 @@ void MakeHeap(int A[], int n){
 
 void HeapSort(int A[], int n){
     int B[n];
-    int temp;
-    for(int i=n; i>=0;i--){
-        B[n-i] = A[0];
-        temp = A[0];
+    for(int i=n-1; i>=0;i--){
+        B[n-1-i] = A[0];
         A[0] = A[i];
-        MaxHeapify(A,0,i-1);
+        if(i>=1){
+        MaxHeapify(A,0,i);
+        }
     }
     for(int j=0;j<n;j++){
-        A[j] = B[n-j];
+        A[j] = B[n-1-j];
     }
     return;
 }
