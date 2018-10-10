@@ -8,7 +8,7 @@ void MaxHeapify(int A[], int q, int n){
     int r = 2*q;
     int temp;
     if(l<n){
-        if(A[l]>A[r] && A[l]>A[q]){
+        if(A[l]>=A[r] && A[l]>A[q]){
             temp = A[q];
             A[q] = A[l];
             A[l] = temp;
