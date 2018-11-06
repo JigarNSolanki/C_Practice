@@ -1,3 +1,5 @@
+/*Given a binary tree find the sum of all those leaf nodes which are left child of their parent and have right sibling.*/
+
 #include<iostream>
 #include<bits/stdc++.h>
 #include<list>
